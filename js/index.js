@@ -25,7 +25,7 @@ const displaySearchResult = books => {
       searchResult.innerHTML = "";
       resultCounter.innerHTML = "";
       const div = document.createElement('h5');
-      div.innerHTML = `<h3 class= "text-danger ">No result Found </h3>`;
+      div.innerHTML = `<h3 class= "text-danger ">No Result Found </h3>`;
       resultCounter.appendChild(div);
      }
     else{
@@ -40,8 +40,8 @@ const displaySearchResult = books => {
         const imageId = book.cover_i;
           
         if (book.first_publish_year === undefined){
-          // if publish date not found 
-          book.first_publish_year = "not found";
+          // if publish date are not found 
+          book.first_publish_year = "Not found";
         }
 
         if (imageId === undefined ){
